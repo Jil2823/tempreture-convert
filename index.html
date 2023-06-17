@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- JavaScript -->
+    <script src="app.js"></script>
+    <title>Tempreture Convert</title>
+</head>
+<body>
+    <div class="main">
+        <div class="box">
+            <p>Tempreture Convert</p>
+            <form onsubmit="calculatetemp(); return false" id="tempcal" >
+            
+            <div class="upper">
+                <input type="number" name="temp" id="temp" value="your Answer" placeholder="Tempreture">
+                <select name="type" id="type">
+                     <option value="c" id="c">&deg;C</option>
+                     <option value="f" id="f">&deg;F</option>
+                </select>
+            </div>
+            <br>
+                <div class="ans"> <input type="text" name="ans" id="ans"  laceholder="Your Answer"></div>
+            <br>
+            <div class="btn">
+                 <input type="submit" name="sub" id="sub" value="Convert" >            
+                 <input type="reset" name="r" id="r" value="Reset" >  
+            </div>          
+
+            <span id="a"></span>
+
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>
